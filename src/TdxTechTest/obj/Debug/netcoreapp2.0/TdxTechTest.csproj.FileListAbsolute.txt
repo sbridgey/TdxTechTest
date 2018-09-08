@@ -3,7 +3,6 @@
 /Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest/bin/Debug/netcoreapp2.0/TdxTechTest.runtimeconfig.dev.json
 /Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest/bin/Debug/netcoreapp2.0/TdxTechTest.dll
 /Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest/bin/Debug/netcoreapp2.0/TdxTechTest.pdb
-/Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest/obj/Debug/netcoreapp2.0/TdxTechTest.csprojResolveAssemblyReference.cache
 /Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest/obj/Debug/netcoreapp2.0/TdxTechTest.csproj.CoreCompileInputs.cache
 /Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest/obj/Debug/netcoreapp2.0/TdxTechTest.AssemblyInfoInputs.cache
 /Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest/obj/Debug/netcoreapp2.0/TdxTechTest.AssemblyInfo.cs
