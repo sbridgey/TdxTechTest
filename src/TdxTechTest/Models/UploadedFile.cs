@@ -5,9 +5,6 @@ namespace TdxTechTest.Models
 {
     public class UploadedFile
     {
-        public UploadedFile()
-        {
-            public List<FileRow> Row { get; set; }
-        }
+        public List<FileRow> Row { get; set; }
     }
 }

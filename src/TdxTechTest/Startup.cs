@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
+using TdxTechTest.FileUtilities;
+using TdxTechTest.Interfaces;
 
 namespace TdxTechTest
 {
@@ -26,6 +28,8 @@ namespace TdxTechTest
             services.AddSingleton<IFileProvider>(
                 new PhysicalFileProvider(
                     Path.Combine(Directory.GetCurrentDirectory(), "wwwroot")));
+
+            services.AddScoped<IFileParser, FileParser>();
 
             services.AddMvc();
         }
