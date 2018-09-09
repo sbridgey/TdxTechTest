@@ -7,6 +7,6 @@ namespace TdxTechTest.Interfaces
     {
         Result_<string> StoreEmployeeDetails(UploadedFile fileData);
 
-        Result_<string> GetEmployeeDetails();
+        Result_<string> GetAllEmployeeDetails();
     }
 }

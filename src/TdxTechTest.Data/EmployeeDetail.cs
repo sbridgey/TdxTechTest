@@ -1,14 +1,15 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TdxTechTest.Data
 {
     public class EmployeeDetail
     {
-        [ForeignKey("Employee")]
-        public Guid EmployeeId { get; set; }
+        public int EmployeeDetailId { get; set; }
         public DateTime EmploymentDate { get; set; }
         public double PayGrade { get; set; }
         public int DirectReportsCount { get; set; }
+
+        public Guid EmployeeId { get; set; }
+        public Employee Employee { get; set; }
     }
 }

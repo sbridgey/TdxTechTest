@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace TdxTechTest.Data
 {
