@@ -5,14 +5,14 @@ using TdxTechTest.Models;
 
 namespace TdxTechTest.FileUtilities
 {
-    public class FileParser : IFileParser
+    public class FileProcessor : IFileParser, IFileValidator
     {
-        public UploadedFile ParseFile()
+        public Result_<UploadedFile> ParseFile(IFormFile file)
         {
             throw new NotImplementedException();
         }
 
-        public FileValidationResult ValidateFile(IFormFile file)
+        public Result_<string> ValidateFile(UploadedFile file)
         {
             throw new NotImplementedException();
         }

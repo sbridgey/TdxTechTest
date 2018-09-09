@@ -5,9 +5,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
+using TdxTechTest.Data;
 using TdxTechTest.FileUtilities;
 using TdxTechTest.Interfaces;
 
@@ -29,7 +31,8 @@ namespace TdxTechTest
                 new PhysicalFileProvider(
                     Path.Combine(Directory.GetCurrentDirectory(), "wwwroot")));
 
-            services.AddScoped<IFileParser, FileParser>();
+            services.AddScoped<FileProcessor, FileProcessor>();
+            services.AddDbContext<ApiContext>(_ => _.UseInMemoryDatabase("TdxTechTest"));
 
             services.AddMvc();
         }

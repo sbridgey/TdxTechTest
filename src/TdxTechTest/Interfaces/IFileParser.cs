@@ -6,7 +6,6 @@ namespace TdxTechTest.Interfaces
 {
     public interface IFileParser
     {
-        FileValidationResult ValidateFile(IFormFile file);
-        UploadedFile ParseFile();
+        Result_<UploadedFile> ParseFile(IFormFile file);
     }
 }

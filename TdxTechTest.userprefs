@@ -1,17 +1,18 @@
 ﻿<Properties StartupConfiguration="{CCB6F740-A74F-4238-A700-D755FF144165}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/TdxTechTest/Models/UploadedFile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/TdxTechTest/Controllers/UploadController.cs">
     <Files>
-      <File FileName="src/TdxTechTest/Program.cs" Line="1" Column="1" />
-      <File FileName="src/TdxTechTest/Startup.cs" Line="32" Column="59" />
+      <File FileName="src/TdxTechTest/Startup.cs" Line="38" Column="10" />
       <File FileName="src/TdxTechTest/Pages/Upload.cshtml" Line="9" Column="29" />
-      <File FileName="src/TdxTechTest/Pages/Upload.cshtml.cs" Line="17" Column="1" />
-      <File FileName="src/TdxTechTest/Pages/_Layout.cshtml" Line="36" Column="53" />
-      <File FileName="src/TdxTechTest/Controllers/UploadController.cs" Line="37" Column="46" />
-      <File FileName="src/TdxTechTest/Interfaces/IFileParser.cs" Line="7" Column="6" />
       <File FileName="src/TdxTechTest/Models/FileValidationResult.cs" Line="11" Column="2" />
-      <File FileName="src/TdxTechTest/FileUtilities/FileParser.cs" Line="7" Column="40" />
-      <File FileName="src/TdxTechTest/Models/UploadedFile.cs" Line="8" Column="25" />
-      <File FileName="src/TdxTechTest/Models/FileRow.cs" Line="1" Column="1" />
+      <File FileName="src/TdxTechTest/Models/UploadedFile.cs" Line="8" Column="9" />
+      <File FileName="src/TdxTechTest/Models/FileRow.cs" Line="15" Column="1" />
+      <File FileName="src/TdxTechTest.Data/Employee.cs" Line="8" Column="12" />
+      <File FileName="src/TdxTechTest.Data/ApiContext.cs" Line="14" Column="67" />
+      <File FileName="src/TdxTechTest.Data/EmployeeDetail.cs" Line="14" Column="2" />
+      <File FileName="src/TdxTechTest/Interfaces/IFileValidator.cs" Line="11" Column="1" />
+      <File FileName="src/TdxTechTest/Interfaces/IFileParser.cs" Line="12" Column="1" />
+      <File FileName="src/TdxTechTest/FileUtilities/FileProcessor.cs" Line="21" Column="1" />
+      <File FileName="src/TdxTechTest/Controllers/UploadController.cs" Line="33" Column="58" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

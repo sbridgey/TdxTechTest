@@ -4,24 +4,20 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using TdxTechTest.FileUtilities;
 using TdxTechTest.Interfaces;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace TdxTechTest.Controllers
 {
-    public class UploadController : Controller
+    public class UploadController : ControllerBase
     {
-        private readonly IFileParser _fileParser;
+        readonly FileProcessor _fileProcessor;
 
-        public UploadController(IFileParser fileParser)
+        public UploadController(FileProcessor fileProcessor)
         {
-            _fileParser = fileParser;
-        }
-
-        public IActionResult Index()
-        {
-            return View();
+            _fileProcessor = fileProcessor;
         }
 
         [HttpPost]
@@ -29,12 +25,15 @@ namespace TdxTechTest.Controllers
         {
             var a = file.FileName;
 
-            var validationResult = _fileParser.ValidateFile(file);
+            var parseResult = _fileProcessor.ParseFile(file);
 
-            if (!validationResult.IsFileValid)
-                return BadRequest(validationResult.Errors);
+            if (!parseResult.IsSuccess)
+                return BadRequest("Error Parsing File");
 
-            var parsedFile = _fileParser.ParseFile();
+            var parsedFileResult = _fileProcessor.ValidateFile(parseResult.Data);
+
+            if (!parsedFileResult.IsSuccess)
+                return BadRequest(parsedFileResult.Data);
 
             return Ok("File Upload Successful");
         }

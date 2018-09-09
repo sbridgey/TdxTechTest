@@ -1,0 +1,8 @@
+/Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest.Data/bin/Debug/netcoreapp2.0/TdxTechTest.Data.deps.json
+/Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest.Data/bin/Debug/netcoreapp2.0/TdxTechTest.Data.dll
+/Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest.Data/bin/Debug/netcoreapp2.0/TdxTechTest.Data.pdb
+/Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest.Data/obj/Debug/netcoreapp2.0/TdxTechTest.Data.csproj.CoreCompileInputs.cache
+/Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest.Data/obj/Debug/netcoreapp2.0/TdxTechTest.Data.AssemblyInfoInputs.cache
+/Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest.Data/obj/Debug/netcoreapp2.0/TdxTechTest.Data.AssemblyInfo.cs
+/Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest.Data/obj/Debug/netcoreapp2.0/TdxTechTest.Data.dll
+/Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest.Data/obj/Debug/netcoreapp2.0/TdxTechTest.Data.pdb
