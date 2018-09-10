@@ -12,6 +12,7 @@ using Microsoft.Extensions.FileProviders;
 using TdxTechTest.Data;
 using TdxTechTest.FileUtilities;
 using TdxTechTest.Interfaces;
+using TdxTechTest.Repositories;
 
 namespace TdxTechTest
 {
@@ -32,6 +33,8 @@ namespace TdxTechTest
                     Path.Combine(Directory.GetCurrentDirectory(), "wwwroot")));
 
             services.AddScoped<FileProcessor, FileProcessor>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+
             services.AddDbContext<ApiContext>(_ => _.UseInMemoryDatabase("TdxTechTest"));
 
             services.AddMvc();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System.Linq;
 using TdxTechTest.Data;
 using TdxTechTest.Interfaces;
 using TdxTechTest.Models;
@@ -14,14 +15,37 @@ namespace TdxTechTest.Repositories
             _apiContext = apiContext;
         }
 
-        public Result_<string> GetAllEmployeeDetails()
+        public Result_<List<EmployeeData>> GetAllEmployeeDetails()
         {
-            throw new NotImplementedException();
+            var employees = _apiContext.Employees;
+            var isSuccess = true && employees.Any();
+            
+            var result = new Result_<List<EmployeeData>>
+            {
+                IsSuccess = isSuccess,
+                Data = employees.Select(e => new EmployeeData().FromEmployee(e)).ToList()
+            };
+
+            return result;
         }
 
         public Result_<string> StoreEmployeeDetails(UploadedFile fileData)
         {
-            throw new NotImplementedException();
+            foreach (var row in fileData.Row)
+            {
+                _apiContext.Add(new Employee { 
+                    EmployeeId = row.EmployeeId, 
+                    FirstName = row.FirstName, 
+                    Surname = row.Surname 
+                });
+            }
+
+            var result = new Result_<string>
+            {
+                IsSuccess = true
+            };
+
+            return result;
         }
     }
 }

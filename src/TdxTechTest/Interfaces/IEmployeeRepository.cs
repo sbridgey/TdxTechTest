@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using TdxTechTest.Models;
 
 namespace TdxTechTest.Interfaces
@@ -7,6 +8,6 @@ namespace TdxTechTest.Interfaces
     {
         Result_<string> StoreEmployeeDetails(UploadedFile fileData);
 
-        Result_<string> GetAllEmployeeDetails();
+        Result_<List<EmployeeData>> GetAllEmployeeDetails();
     }
 }
