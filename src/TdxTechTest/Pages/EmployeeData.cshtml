@@ -1,0 +1,15 @@
+﻿@page
+@model EmployeeDataModel
+
+@foreach (var employee in Model.EmployeeData)
+{
+    <tr>
+        <td>@Html.DisplayFor(mod => employee.EmployeeId)</td>
+        <td>@Html.DisplayFor(mod => employee.FirstName)</td>
+        <td>@Html.DisplayFor(mod => employee.Surname)</td>
+        <td>@Html.DisplayFor(mod => employee.EmploymentDate)</td>
+        <td>@Html.DisplayFor(mod => employee.HourlyRate)</td>
+        <td>@Html.DisplayFor(mod => employee.DirectReportsCount)</td>
+    </tr>
+    <br/>
+}

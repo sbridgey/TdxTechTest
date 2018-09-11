@@ -1,20 +1,17 @@
 ﻿<Properties StartupConfiguration="{CCB6F740-A74F-4238-A700-D755FF144165}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/TdxTechTest/Controllers/UploadController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/TdxTechTest/Repositories/EmployeeRepository.cs">
     <Files>
-      <File FileName="src/TdxTechTest/Pages/Upload.cshtml" Line="12" Column="5" />
-      <File FileName="src/TdxTechTest/Interfaces/IFileValidator.cs" Line="9" Column="18" />
-      <File FileName="src/TdxTechTest/Interfaces/IValidator.cs" Line="5" Column="33" />
-      <File FileName="src/TdxTechTest/FileUtilities/StringValidator.cs" Line="17" Column="43" />
-      <File FileName="src/TdxTechTest/FileUtilities/IntValidator.cs" Line="17" Column="1" />
-      <File FileName="src/TdxTechTest/FileUtilities/DoubleValidator.cs" Line="12" Column="9" />
-      <File FileName="src/TdxTechTest/Startup.cs" Line="43" Column="13" />
-      <File FileName="src/TdxTechTest/FileUtilities/FileProcessor.cs" Line="35" Column="13" />
-      <File FileName="src/TdxTechTest/Controllers/UploadController.cs" Line="16" Column="10" />
+      <File FileName="src/TdxTechTest/Pages/EmployeeData.cshtml" Line="12" Column="70" />
+      <File FileName="src/TdxTechTest/Models/EmployeeData.cs" Line="13" Column="38" />
+      <File FileName="src/TdxTechTest/Repositories/EmployeeRepository.cs" Line="32" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest/Repositories/EmployeeRepository.cs" relfile="src/TdxTechTest/Repositories/EmployeeRepository.cs" line="29" column="1" />
+      <Breakpoint file="/Users/Simon/Documents/GitHub/TdxTechTest/src/TdxTechTest/Repositories/EmployeeRepository.cs" relfile="src/TdxTechTest/Repositories/EmployeeRepository.cs" line="32" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

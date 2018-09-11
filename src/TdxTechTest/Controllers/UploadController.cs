@@ -1,16 +1,19 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TdxTechTest.FileUtilities;
+using TdxTechTest.Interfaces;
 
 namespace TdxTechTest.Controllers
 {
     public class UploadController : ControllerBase
     {
         readonly FileProcessor _fileProcessor;
+        readonly IEmployeeRepository _employeeRepository;
 
-        public UploadController(FileProcessor fileProcessor)
+        public UploadController(FileProcessor fileProcessor, IEmployeeRepository employeeRepository)
         {
             _fileProcessor = fileProcessor;
+            _employeeRepository = employeeRepository;
         }
 
         [HttpPost]
@@ -27,6 +30,8 @@ namespace TdxTechTest.Controllers
 
             if (!parsedFileResult.IsSuccess)
                 return BadRequest(parsedFileResult.Data);
+
+            _employeeRepository.StoreEmployeeDetails(parseResult.Data);
 
             return Ok("File Upload Successful");
         }

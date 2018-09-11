@@ -8,7 +8,7 @@ namespace TdxTechTest.Models
         public string FirstName { get; set; }
         public string Surname { get; set; }
         public DateTime EmploymentDate { get; set; }
-        public double PayGrade { get; set; }
+        public double HourlyRate { get; set; }
         public int DirectReportsCount { get; set; }
     }
 }

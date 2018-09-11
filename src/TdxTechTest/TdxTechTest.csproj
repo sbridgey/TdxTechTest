@@ -14,6 +14,9 @@
     <Compile Update="Pages\Upload.cshtml.cs">
       <DependentUpon>Upload.cshtml</DependentUpon>
     </Compile>
+    <Compile Update="Pages\EmployeeData.cshtml.cs">
+      <DependentUpon>EmployeeData.cshtml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
