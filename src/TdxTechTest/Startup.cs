@@ -35,6 +35,10 @@ namespace TdxTechTest
             services.AddScoped<FileProcessor, FileProcessor>();
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 
+            services.AddSingleton<IValidator, StringValidator>();
+            services.AddSingleton<IValidator, IntValidator>();
+            services.AddSingleton<IValidator, DoubleValidator>();
+
             services.AddDbContext<ApiContext>(_ => _.UseInMemoryDatabase("TdxTechTest"));
 
             services.AddMvc();

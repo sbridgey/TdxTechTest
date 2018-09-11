@@ -1,17 +1,14 @@
 ﻿<Properties StartupConfiguration="{CCB6F740-A74F-4238-A700-D755FF144165}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/TdxTechTest/Repositories/EmployeeRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/TdxTechTest/FileUtilities/FileProcessor.cs">
     <Files>
-      <File FileName="src/TdxTechTest.Data/Employee.cs" Line="2" Column="1" />
-      <File FileName="src/TdxTechTest.Data/EmployeeDetail.cs" Line="15" Column="2" />
-      <File FileName="src/TdxTechTest/Startup.cs" Line="37" Column="13" />
-      <File FileName="src/TdxTechTest/Pages/Upload.cshtml" Line="9" Column="29" />
-      <File FileName="src/TdxTechTest/Models/FileValidationResult.cs" Line="11" Column="2" />
-      <File FileName="src/TdxTechTest.Data/ApiContext.cs" Line="12" Column="10" />
+      <File FileName="src/TdxTechTest/Pages/Upload.cshtml" Line="12" Column="5" />
       <File FileName="src/TdxTechTest/Interfaces/IFileValidator.cs" Line="11" Column="1" />
-      <File FileName="src/TdxTechTest/Interfaces/IFileParser.cs" Line="12" Column="1" />
-      <File FileName="src/TdxTechTest/FileUtilities/FileProcessor.cs" Line="19" Column="6" />
-      <File FileName="src/TdxTechTest/Repositories/EmployeeRepository.cs" Line="9" Column="52" />
-      <File FileName="src/TdxTechTest/Models/EmployeeData.cs" Line="15" Column="28" />
+      <File FileName="src/TdxTechTest/Interfaces/IValidator.cs" Line="9" Column="19" />
+      <File FileName="src/TdxTechTest/FileUtilities/StringValidator.cs" Line="20" Column="14" />
+      <File FileName="src/TdxTechTest/FileUtilities/IntValidator.cs" Line="13" Column="13" />
+      <File FileName="src/TdxTechTest/FileUtilities/DoubleValidator.cs" Line="17" Column="36" />
+      <File FileName="src/TdxTechTest/Startup.cs" Line="43" Column="13" />
+      <File FileName="src/TdxTechTest/FileUtilities/FileProcessor.cs" Line="10" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
