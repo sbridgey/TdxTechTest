@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using CsvHelper;
 using Microsoft.AspNetCore.Http;
 using TdxTechTest.Interfaces;
 using TdxTechTest.Models;
@@ -17,7 +20,24 @@ namespace TdxTechTest.FileUtilities
 
         public Result_<UploadedFile> ParseFile(IFormFile file)
         {
-            throw new NotImplementedException();
+            var result = string.Empty;
+            IEnumerable<FileRow> parsedFile = new List<FileRow>;
+            if (file != null)
+            {
+                using (var reader = new StreamReader(file.OpenReadStream()))
+                {
+                    var csv = new CsvReader(reader);
+                    parsedFile = csv.GetRecords<FileRow>();
+                }
+            }
+
+            var uploadedFile = new UploadedFile();
+            if(parsedFile != null)
+            {
+                uploadedFile.Rows = parsedFile.ToList();
+            }
+
+            return new Result_<UploadedFile>() { IsSuccess = true, Data = uploadedFile };
         }
 
         public Result_<List<string>> ValidateFile(UploadedFile file)

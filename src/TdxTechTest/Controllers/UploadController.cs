@@ -2,8 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using TdxTechTest.FileUtilities;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace TdxTechTest.Controllers
 {
     public class UploadController : ControllerBase
